@@ -6,13 +6,24 @@ e buonasera se è sera (oltre le 17)
 */
 
 const name = 'Mario';
+let orario = parseFloat(prompt("inserisci l'orario... separa le ore dai minuti con il punto (.)."))
 
 
 // Dichiara la funzione qui.
-
+function Saluto(nome, ora){
+if(ora >= 8.00 && ora <= 13.00 ){
+    console.log(`Buongiorno ${nome}`);
+}
+else if(ora >= 13.00 && ora <= 17.00){
+    console.log(`Buon pomeriggio ${nome}`);
+}
+else if(ora >= 17.00){
+    console.log(`Buona sera ${nome}`);
+}
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+Saluto (name, orario);
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
