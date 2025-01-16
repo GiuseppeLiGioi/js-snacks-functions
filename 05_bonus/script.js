@@ -27,3 +27,19 @@ Saluto (name, orario);
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+
+
+
+let salutoName = (nome, ora)=>{
+    if(ora >= 8.00 && ora <= 13.00 ){
+        console.log(`Buongiorno ${nome}`);
+    }
+    else if(ora >= 13.00 && ora <= 17.00){
+        console.log(`Buon pomeriggio ${nome}`);
+    }
+    else if(ora >= 17.00){
+        console.log(`Buona sera ${nome}`);
+    }
+    }
+    // Invoc arrow funzione
+    Saluto (name, orario);
