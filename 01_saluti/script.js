@@ -7,6 +7,7 @@ const userName = 'Mario';
 function Saluti(string1){
 
 return console.log(`Ciao ${string1}`);
+
 }
 
 // Invoca la funzione qui e stampa il risultato in console
@@ -14,3 +15,16 @@ return console.log(`Ciao ${string1}`);
 Saluti (userName);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+
+
+// arrow function
+
+
+let saluto = (string1) => console.log(`Ciao ${string1}`);
+
+
+//invoco arrow function
+
+saluto (userName);
+
